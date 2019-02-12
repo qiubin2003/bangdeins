@@ -76,7 +76,6 @@ class Bandins
                 $_params[] = $key . $val;
             }
             sort($_params);
-            print_r($_params);
             $_params = implode('', $_params);
         }
         return md5($this->appid . $_params . $sMsgEncrypt);
